@@ -181,6 +181,8 @@ press 4 to solve the very hard difficulty level question...
     sleep(2)
     screen_clear()
     print("\n")
+
+    # using switcher to mimic the switch cse statement
     switcher = {
         1: solve_easy,
         2: solve_mid,
