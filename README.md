@@ -10,14 +10,6 @@
 
 Open the **Implementation** folder for the source code...
 
-----
-
-## Contributors List and Summary
-
-PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
-265057 | Debashish  | complete project |  X  |  X  | X  | X
-
 ------
 
 ## Directory_Tree
