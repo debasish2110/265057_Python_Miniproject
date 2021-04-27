@@ -1,3 +1,18 @@
+# importing the dependencies
+import os
+from time import sleep
+
+
+# The screen clear function
+def screen_clear():
+    # for mac and linux(here, os.name is 'posix')
+    if os.name == 'posix':
+        _ = os.system('clear')
+    else:
+        # for windows platfrom
+        _ = os.system('cls')
+
+
 # this function will print the coverpage.... which is saved in the form of a text file
 def coverpage():
     pass
@@ -113,10 +128,63 @@ board_very_hard = [  # very hard level sudoku
     [3, 0, 0, 0, 0, 0, 0, 8, 5]
 ]
 
-if __name__ == '__main__':
 
+# this function solves the easy board
+def solve_easy():
     print_board(board_easy)
     solver(board_easy)
     print("Solving")
     print_board(board_easy)
     print("Solved")
+
+
+# this function solves the medium board
+def solve_mid():
+    print_board(board_mid)
+    solver(board_mid)
+    print("Solving")
+    print_board(board_mid)
+    print("Solved")
+
+
+# this function solves the hard board
+def solve_hard():
+    print_board(board_hard)
+    solver(board_hard)
+    print("Solving")
+    print_board(board_hard)
+    print("Solved")
+
+
+# this function solves the very hard board
+def solve_very_hard():
+    print_board(board_very_hard)
+    solver(board_very_hard)
+    print("Solving")
+    print_board(board_very_hard)
+    print("Solved")
+
+
+def default():
+    return "Please enter a valid Difficulty level... :("
+
+
+if __name__ == '__main__':
+    # using """ for multi-line execution
+    print("""press 1 to solve the easy difficulty level question...
+press 2 to solve the medium difficulty level question...
+press 3 to solve the hard difficulty level question...
+press 4 to solve the very hard difficulty level question...
+""")
+    # taking the difficult level choice from the user
+    choice = int(input("Enter The Difficulty Level: "))
+    sleep(2)
+    screen_clear()
+    print("\n")
+    switcher = {
+        1: solve_easy,
+        2: solve_mid,
+        3: solve_hard,
+        4: solve_very_hard
+    }
+    switcher.get(choice, default)()
