@@ -2,4 +2,4 @@
 ## SUDOKU SOLVER
 -----
 
-[![C/C++ CI](https://github.com/debasish2110/LTTS-C-MiniProject/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/debasish2110/LTTS-C-MiniProject/actions/workflows/c-cpp.yml)
+[![Python CI Build Status](https://github.com/debasish2110/265057_Python_Miniproject/actions/workflows/python-package.yml/badge.svg)](https://github.com/debasish2110/265057_Python_Miniproject/actions/workflows/python-package.yml)
