@@ -24,7 +24,7 @@ def view_coverpage():
 def print_board(bo):
     for i in range(len(bo)):
         if i % 3 == 0 and i != 0:
-            print("---------------------")
+            print("-----------------------")
         for j in range(len(bo[0])):
             if j % 3 == 0 and j != 0:
                 print(" | ", end="")
@@ -135,27 +135,41 @@ board_very_hard = [  # very hard level sudoku
 def solve_easy():
     print_board(board_easy)
     solver(board_easy)
-    print("Solving")
+    print("\n\n\n")
+    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print("\n\n")
     print_board(board_easy)
-    print("Solved")
+    print("\n")
+    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print("\n\n")
+    # end of function
 
 
 # this function solves the medium board
 def solve_mid():
     print_board(board_mid)
     solver(board_mid)
-    print("Solving")
+    print("\n")
+    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print("\n\n")
     print_board(board_mid)
-    print("Solved")
+    print("\n")
+    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print("\n\n")
+    # end of function
 
 
 # this function solves the hard board
 def solve_hard():
     print_board(board_hard)
     solver(board_hard)
-    print("Solving")
+    print("\n")
+    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print("\n\n")
     print_board(board_hard)
-    print("Solved")
+    print("\n")
+    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print("\n\n")
     # end of function
 
 
@@ -163,9 +177,13 @@ def solve_hard():
 def solve_very_hard():
     print_board(board_very_hard)
     solver(board_very_hard)
-    print("Solving")
+    print("\n")
+    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print("\n\n")
     print_board(board_very_hard)
-    print("Solved")
+    print("\n")
+    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print("\n\n")
     # end of function
 
 
@@ -187,9 +205,9 @@ if __name__ == '__main__':
 
     view_options()
     choice = int(input("Enter The Difficulty Level: "))
-    sleep(2)
+    sleep(1)
     screen_clear()
-    print("\n")
+    print("\n\n")
 
     # using switcher to mimic the switch cse statement
     switcher = {
@@ -198,7 +216,7 @@ if __name__ == '__main__':
         3: solve_hard,
         4: solve_very_hard
     }
-    switcher.get(choice, default)()   # calling the function acc to ip given by the user
+    switcher.get(choice, default)()  # calling the function acc to ip given by the user
 
 """
 Assignment submitted by Debashish Dash (265057)
