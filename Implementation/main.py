@@ -1,5 +1,6 @@
 # importing the dependencies
 import os
+import sys
 from time import sleep
 
 
@@ -202,21 +203,32 @@ def view_options():
 if __name__ == '__main__':
     # taking the difficult level choice from the user
     view_coverpage()
+    print("""
+    Enter 1 to Continue...
+    Enter 0 to exit...
+    """)
 
-    view_options()
-    choice = int(input("Enter The Difficulty Level: "))
+    ip = int(input("enter ur choice(either 1 or 2): "))
     sleep(1)
     screen_clear()
-    print("\n\n")
 
-    # using switcher to mimic the switch cse statement
-    switcher = {
-        1: solve_easy,
-        2: solve_mid,
-        3: solve_hard,
-        4: solve_very_hard
-    }
-    switcher.get(choice, default)()  # calling the function acc to ip given by the user
+    if ip == 1:
+        view_options()
+        choice = int(input("Enter The Difficulty Level: "))
+        sleep(1)
+        screen_clear()
+        print("\n\n")
+
+        # using switcher to mimic the switch cse statement
+        switcher = {
+            1: solve_easy,
+            2: solve_mid,
+            3: solve_hard,
+            4: solve_very_hard
+        }
+        switcher.get(choice, default)()  # calling the function acc to ip given by the user
+    else:
+        sys.exit("\n\nThank You... _/\_ visit again... \n")
 
 """
 Assignment submitted by Debashish Dash (265057)
