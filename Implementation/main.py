@@ -26,14 +26,14 @@ def view_coverpage():
 def print_board(bo):
     for i in range(len(bo)):
         if i % 3 == 0 and i != 0:
-            print("-----------------------")
+            print(colored("-----------------------", 'red'))
         for j in range(len(bo[0])):
             if j % 3 == 0 and j != 0:
-                print(" | ", end="")
+                print(colored(" | ", 'red'), end="")
             if j == 8:
-                print(bo[i][j])
+                print(colored(bo[i][j], 'yellow'))
             else:
-                print(str(bo[i][j]) + " ", end="")
+                print(colored(str(bo[i][j]), 'yellow') + " ", end="")
                 # End of print_board function
 
 
@@ -138,11 +138,11 @@ def solve_easy():
     print_board(board_easy)
     solver(board_easy)
     print("\n\n\n")
-    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solving" + "=============================", 'yellow'))
     print("\n\n")
     print_board(board_easy)
     print("\n")
-    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
     # end of function
 
@@ -152,11 +152,11 @@ def solve_mid():
     print_board(board_mid)
     solver(board_mid)
     print("\n")
-    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solving" + "=============================", 'yellow'))
     print("\n\n")
     print_board(board_mid)
     print("\n")
-    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
     # end of function
 
@@ -166,11 +166,11 @@ def solve_hard():
     print_board(board_hard)
     solver(board_hard)
     print("\n")
-    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solving" + "=============================", 'yellow'))
     print("\n\n")
     print_board(board_hard)
     print("\n")
-    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
     # end of function
 
@@ -180,11 +180,11 @@ def solve_very_hard():
     print_board(board_very_hard)
     solver(board_very_hard)
     print("\n")
-    print('\x1b[0;33;40m' + "=============================" + "Solving" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solving" + "=============================", 'yellow'))
     print("\n\n")
     print_board(board_very_hard)
     print("\n")
-    print('\x1b[1;32;40m' + "=============================" + "Solved" + "=============================" + '\x1b[0m')
+    print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
     # end of function
 
@@ -229,7 +229,7 @@ if __name__ == '__main__':
         }
         switcher.get(choice, default)()  # calling the function acc to ip given by the user
     else:
-        sys.exit(colored("\n\nThank You... _/\_ visit again... \n", 'yellow', attrs=['bold']))
+        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
 
 """
 Assignment submitted by Debashish Dash (265057)
