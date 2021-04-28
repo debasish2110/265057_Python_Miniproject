@@ -13,7 +13,7 @@ def screen_clear():
         _ = os.system('cls')
 
 
-# this function will print the coverpage.... which is saved in the form of a text file
+# this function will print the cover page.... which is saved in the form of a text file
 def coverpage():
     pass
 
@@ -154,6 +154,7 @@ def solve_hard():
     print("Solving")
     print_board(board_hard)
     print("Solved")
+    # end of function
 
 
 # this function solves the very hard board
@@ -163,20 +164,24 @@ def solve_very_hard():
     print("Solving")
     print_board(board_very_hard)
     print("Solved")
+    # end of function
 
 
 def default():
     return "Please enter a valid Difficulty level... :("
 
 
+# this function prints the options which are written in the difficulty_level_choice.txt file inside src folder
+def view_options():
+    with open('src/difficulty_level_choice.txt') as f:
+        options = f.read()
+    print(options)
+    # end of function
+
+
 if __name__ == '__main__':
-    # using """ for multi-line execution
-    print("""press 1 to solve the easy difficulty level question...
-press 2 to solve the medium difficulty level question...
-press 3 to solve the hard difficulty level question...
-press 4 to solve the very hard difficulty level question...
-""")
     # taking the difficult level choice from the user
+    view_options()
     choice = int(input("Enter The Difficulty Level: "))
     sleep(2)
     screen_clear()
