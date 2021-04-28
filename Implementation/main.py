@@ -14,8 +14,10 @@ def screen_clear():
 
 
 # this function will print the cover page.... which is saved in the form of a text file
-def coverpage():
-    pass
+def view_coverpage():
+    with open('src/cover_page.txt') as f:
+        coverpage = f.read()
+    print(coverpage)
 
 
 # print board function will print the board
@@ -181,6 +183,8 @@ def view_options():
 
 if __name__ == '__main__':
     # taking the difficult level choice from the user
+    view_coverpage()
+
     view_options()
     choice = int(input("Enter The Difficulty Level: "))
     sleep(2)
@@ -194,4 +198,8 @@ if __name__ == '__main__':
         3: solve_hard,
         4: solve_very_hard
     }
-    switcher.get(choice, default)()
+    switcher.get(choice, default)()   # calling the function acc to ip given by the user
+
+"""
+Assignment submitted by Debashish Dash
+"""
