@@ -31,9 +31,9 @@ def print_board(bo):
             if j % 3 == 0 and j != 0:
                 print(colored(" | ", 'red'), end="")
             if j == 8:
-                print(colored(bo[i][j], 'yellow'))
+                print(colored(bo[i][j], 'blue'))
             else:
-                print(colored(str(bo[i][j]), 'yellow') + " ", end="")
+                print(colored(str(bo[i][j]), 'blue') + " ", end="")
                 # End of print_board function
 
 
