@@ -16,7 +16,7 @@ Open the **[Implementation](https://github.com/debasish2110/265057_Python_Minipr
 
 ```
 ├── .github/workflows
-│   └── python-package.yml
+│   └── python-lint with flike8 and build.yml
 | 
 ├── Implementation
 │   ├── src
