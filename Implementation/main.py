@@ -2,6 +2,7 @@
 import os
 import sys
 from time import sleep
+from termcolor import colored
 
 
 # The screen clear function
@@ -196,25 +197,25 @@ def default():
 def view_options():
     with open('src/difficulty_level_choice.txt') as f:
         options = f.read()
-    print(options)
+    print(colored(options, 'cyan'))
     # end of function
 
 
 if __name__ == '__main__':
     # taking the difficult level choice from the user
     view_coverpage()
-    print("""
+    print(colored("""
     Enter 1 to Continue...
     Enter 0 to exit...
-    """)
+    """,  'yellow', attrs=['bold']))
 
-    ip = int(input("enter ur choice(either 1 or 2): "))
+    ip = int(input(colored("enter ur choice(either 1 or 2): ", 'yellow', attrs=['bold'])))
     sleep(1)
     screen_clear()
 
     if ip == 1:
         view_options()
-        choice = int(input("Enter The Difficulty Level: "))
+        choice = int(input(colored("Enter The Difficulty Level: ", 'yellow', attrs=['bold'])))
         sleep(1)
         screen_clear()
         print("\n\n")
@@ -228,7 +229,7 @@ if __name__ == '__main__':
         }
         switcher.get(choice, default)()  # calling the function acc to ip given by the user
     else:
-        sys.exit("\n\nThank You... _/\_ visit again... \n")
+        sys.exit(colored("\n\nThank You... _/\_ visit again... \n", 'yellow', attrs=['bold']))
 
 """
 Assignment submitted by Debashish Dash (265057)
