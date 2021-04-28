@@ -19,7 +19,7 @@ Open the **[Implementation](https://github.com/debasish2110/265057_Python_Minipr
 │   └── python-package.yml
 | 
 ├── Implementation
-│   ├── Text_src
+│   ├── src
 |   |   ├── cover_page.txt
 |   |   └── difficulty_level_choice.txt
 |   ├── Test
