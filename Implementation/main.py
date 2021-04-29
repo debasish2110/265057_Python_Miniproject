@@ -3,6 +3,7 @@ import os
 import sys
 from time import sleep
 from termcolor import colored
+import board as bd
 
 
 # The screen clear function
@@ -22,6 +23,9 @@ def view_coverpage():
     print(coverpage)
 
 
+from termcolor import colored
+
+
 # print board function will print the board
 def print_board(bo):
     for i in range(len(bo)):
@@ -35,51 +39,6 @@ def print_board(bo):
             else:
                 print(colored(str(bo[i][j]), 'blue') + " ", end="")
                 # End of print_board function
-
-
-# find_empty function will find the empty place(s)
-def find_empty(bo):
-    for i in range(len(bo)):
-        for j in range(len(bo[0])):
-            if bo[i][j] == 0:
-                return (i, j)
-    return None
-    # End of find_empty function
-
-
-# this function checks the validity
-def is_valid(bo, num, pos):
-    for i in range(len(bo[0])):  # checking row
-        if bo[pos[0]][i] == num and pos[1] != i:
-            return False
-    for j in range(len(bo)):  # checking column
-        if bo[i][pos[1]] == num and pos[0] != i:
-            return False
-    box_x = pos[1] // 3
-    box_y = pos[0] // 3
-    for i in range(box_y * 3, box_y * 3 + 3):
-        for j in range(box_x * 3, box_x * 3 + 3):
-            if bo[i][j] == num and (i, j) != pos:
-                return False
-    return True
-    # End of valid funtion
-
-
-# this is the function which solves the sudoku puzzle
-def solver(bo):
-    find = find_empty(bo)
-    if not find:
-        return True
-    else:
-        row, col = find
-    for i in range(1, 10):
-        if is_valid(bo, i, (row, col)):
-            bo[row][col] = i
-            if solver(bo):  # using recursion
-                return True
-            bo[row][col] = 0
-    return False
-    # end of solver function
 
 
 # board1 board2 board3  are 3 different types of lists that contains lists of the numbers in sudoku....
@@ -133,6 +92,51 @@ board_very_hard = [  # very hard level sudoku
 ]
 
 
+# find_empty function will find the empty place(s)
+def find_empty(bo):
+    for i in range(len(bo)):
+        for j in range(len(bo[0])):
+            if bo[i][j] == 0:
+                return (i, j)
+    return None
+    # End of find_empty function
+
+
+# this function checks the validity
+def is_valid(bo, num, pos):
+    for i in range(len(bo[0])):  # checking row
+        if bo[pos[0]][i] == num and pos[1] != i:
+            return False
+    for j in range(len(bo)):  # checking column
+        if bo[i][pos[1]] == num and pos[0] != i:
+            return False
+    box_x = pos[1] // 3
+    box_y = pos[0] // 3
+    for i in range(box_y * 3, box_y * 3 + 3):
+        for j in range(box_x * 3, box_x * 3 + 3):
+            if bo[i][j] == num and (i, j) != pos:
+                return False
+    return True
+    # End of valid funtion
+
+
+# this is the function which solves the sudoku puzzle
+def solver(bo):
+    find = find_empty(bo)
+    if not find:
+        return True
+    else:
+        row, col = find
+    for i in range(1, 10):
+        if is_valid(bo, i, (row, col)):
+            bo[row][col] = i
+            if solver(bo):  # using recursion
+                return True
+            bo[row][col] = 0
+    return False
+    # end of solver function
+
+
 # this function solves the easy board
 def solve_easy():
     print_board(board_easy)
@@ -144,6 +148,15 @@ def solve_easy():
     print("\n")
     print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
+    choice = int(input(colored("Enter 1 to get back to the option: \nEnter 0 to exit: ", 'yellow')))
+    sleep(1)
+    screen_clear()
+    if choice == 1:
+        tasks()
+    elif choice == 0:
+        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+    else:
+        print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
 
 
@@ -158,6 +171,15 @@ def solve_mid():
     print("\n")
     print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
+    choice = int(input(colored("Enter 1 to get back to the option: \nEnter 0 to exit: ", 'yellow')))
+    sleep(1)
+    screen_clear()
+    if choice == 1:
+        tasks()
+    elif choice == 0:
+        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+    else:
+        print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
 
 
@@ -172,6 +194,15 @@ def solve_hard():
     print("\n")
     print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
+    choice = int(input(colored("Enter 1 to get back to the option: \nEnter 0 to exit: ", 'yellow')))
+    sleep(1)
+    screen_clear()
+    if choice == 1:
+        tasks()
+    elif choice == 0:
+        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+    else:
+        print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
 
 
@@ -186,7 +217,33 @@ def solve_very_hard():
     print("\n")
     print(colored("=============================" + "Solved" + "===============================", 'blue'))
     print("\n\n")
+    choice = int(input(colored("Enter 1 to get back to the option: \nEnter 0 to exit: ", 'yellow')))
+    sleep(1)
+    screen_clear()
+    if choice == 1:
+        tasks()
+    elif choice == 0:
+        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+    else:
+        print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
+
+
+def tasks():
+    view_options()
+    choice = int(input(colored("Enter The Difficulty Level: ", 'yellow', attrs=['bold'])))
+    sleep(1)
+    screen_clear()
+    print("\n\n")
+
+    # using switcher to mimic the switch cse statement
+    switcher = {
+        1: solve_easy,
+        2: solve_mid,
+        3: solve_hard,
+        4: solve_very_hard
+    }
+    switcher.get(choice, default)()  # calling the function acc to ip given by the user
 
 
 def default():
@@ -207,29 +264,16 @@ if __name__ == '__main__':
     print(colored("""
     Enter 1 to Continue...
     Enter 0 to exit...
-    """,  'yellow', attrs=['bold']))
+    """, 'yellow', attrs=['bold']))
 
-    ip = int(input(colored("enter ur choice(either 1 or 2): ", 'yellow', attrs=['bold'])))
+    ip = int(input(colored("enter ur choice(either 0 or 1): ", 'yellow', attrs=['bold'])))
     sleep(1)
     screen_clear()
 
     if ip == 1:
-        view_options()
-        choice = int(input(colored("Enter The Difficulty Level: ", 'yellow', attrs=['bold'])))
-        sleep(1)
-        screen_clear()
-        print("\n\n")
-
-        # using switcher to mimic the switch cse statement
-        switcher = {
-            1: solve_easy,
-            2: solve_mid,
-            3: solve_hard,
-            4: solve_very_hard
-        }
-        switcher.get(choice, default)()  # calling the function acc to ip given by the user
+        tasks()
     else:
-        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+        sys.exit(colored("\n\nThank You for visiting us... \nRegards Debashish Dash (265057)", 'yellow', attrs=['bold']))
 
 """
 Assignment submitted by Debashish Dash (265057)
