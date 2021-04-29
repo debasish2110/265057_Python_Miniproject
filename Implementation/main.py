@@ -3,7 +3,6 @@ import os
 import sys
 from time import sleep
 from termcolor import colored
-import board as bd
 
 
 # The screen clear function
@@ -21,9 +20,6 @@ def view_coverpage():
     with open('src/cover_page.txt') as f:
         coverpage = f.read()
     print(coverpage)
-
-
-from termcolor import colored
 
 
 # print board function will print the board
