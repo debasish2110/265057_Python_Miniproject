@@ -150,7 +150,7 @@ def solve_easy():
     if choice == 1:
         tasks()
     elif choice == 0:
-        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+        sys.exit(colored("\n\nThank You for visiting us...\nRegards Debashish Dash (265057) \n", 'yellow', attrs=['bold']))
     else:
         print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
@@ -173,7 +173,7 @@ def solve_mid():
     if choice == 1:
         tasks()
     elif choice == 0:
-        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+        sys.exit(colored("\n\nThank You for visiting us...\nRegards Debashish Dash (265057) \n", 'yellow', attrs=['bold']))
     else:
         print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
@@ -196,7 +196,7 @@ def solve_hard():
     if choice == 1:
         tasks()
     elif choice == 0:
-        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+        sys.exit(colored("\n\nThank You for visiting us...\nRegards Debashish Dash (265057) \n", 'yellow', attrs=['bold']))
     else:
         print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
@@ -219,7 +219,7 @@ def solve_very_hard():
     if choice == 1:
         tasks()
     elif choice == 0:
-        sys.exit(colored("\n\nThank You for visiting us... \n", 'yellow', attrs=['bold']))
+        sys.exit(colored("\n\nThank You for visiting us..\nRegards Debashish Dash (265057). \n", 'yellow', attrs=['bold']))
     else:
         print(colored("Entered choice is invalid...\n\n", 'red'))
     # end of function
