@@ -9,12 +9,9 @@
 **static code analysis using pylint with flake8 and build status**
 [![Python-lint with flake8 and build](https://github.com/debasish2110/265057_Python_Miniproject/actions/workflows/python-app.yml/badge.svg)](https://github.com/debasish2110/265057_Python_Miniproject/actions/workflows/python-app.yml)
 
-**Codacy check**
-
-
 Open the **[Implementation](https://github.com/debasish2110/265057_Python_Miniproject/tree/master/Implementation)** folder for the source code...
 
-------
+-----
 
 ## Directory_Tree
 
