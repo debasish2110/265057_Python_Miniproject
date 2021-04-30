@@ -1,4 +1,7 @@
 import pytest
+import sys
+
+sys.path.insert(1, "../")
 
 board_notnull = [
     [3, 2, 4, 1, 5, 7, 6, 8, 9],
@@ -70,8 +73,8 @@ def find_empty(bo):
 
 
 def test_find_empty():
-    assert find_empty(board_notnull) is None          # test case 1
-    assert find_empty(board_easy) is not None         # test case 2
-    assert find_empty(board_mid) is not None          # test case 3
-    assert find_empty(board_hard) is not None         # test case 4
-    assert find_empty(board_very_hard) is not None    # test case 5
+    assert find_empty(board_notnull) is None  # test case 1
+    assert find_empty(board_easy) is not None  # test case 2
+    assert find_empty(board_mid) is not None  # test case 3
+    assert find_empty(board_hard) is not None  # test case 4
+    assert find_empty(board_very_hard) is not None  # test case 5
