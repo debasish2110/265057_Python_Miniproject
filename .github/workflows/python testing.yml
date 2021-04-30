@@ -29,4 +29,4 @@ jobs:
         python -m pip pytest
     - name: Test with pytest
       run: |
-        pytest -C Implementation/Test/ all
+        pytest 
