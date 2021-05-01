@@ -68,13 +68,32 @@ $ pytest sudokuSolver.py
 |   |   ├── cover_page.txt
 |   |   └── difficulty_level_choice.txt
 |   ├── Test
-│   └── main.py
-|
+|   |   └── test.py
+│   ├── main.py
+|   ├── requirements.txt
+|   └── README.md
+├── ScreenShots
+|   ├── banner.png
+|   ├── welcome page.png
+|   ├── options.png
+|   ├── solving sudoku roblem.png
+|   ├── exit page.png
+|   └── pytest output.png
 ├── .gitignore 
-└──  LICENSE
+├── README.md
+└── LICENSE
 
 ```
 -----
+
+
+## Contributors List and Summary
+
+PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+-------|---------|----------------|----------------|---------------|-------------|--------------
+[265057](https://futureskillsnasscom.edcast.com/@debasishdash98) | Debashish  | complete project | X No     | X No   | 5  | 5
+
+-------------------------------------------------------------------------
 
 ### Future Update Plans,,,
 Working on a feature which will take sudoku problem from user and solve that problem.
