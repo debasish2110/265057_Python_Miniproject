@@ -65,11 +65,14 @@ $ pytest sudokuSolver.py
 |   |   ├── Banner.py
 |   |   ├── cover_page.txt
 |   |   └── difficulty_level_choice.txt
+|   |
 |   ├── Test
 |   |   └── test.py
+|   |
 │   ├── main.py
 |   ├── requirements.txt
 |   └── README.md
+|   
 ├── ScreenShots
 |   ├── banner.png
 |   ├── welcome page.png
@@ -77,8 +80,10 @@ $ pytest sudokuSolver.py
 |   ├── solving sudoku roblem.png
 |   ├── exit page.png
 |   └── pytest output.png
+|
 ├── recordings
-|   ├── code_run_n_test.mp4
+|   └── code_run_n_test.mp4
+|
 ├── .gitignore 
 ├── README.md
 └── LICENSE
@@ -110,4 +115,4 @@ Backtracking algorithm is used in this project and the algorithm is inspired fro
 ### Support & Contributions
 - Please ⭐️ this repository if this project helped you!
 - Contributions of any kind welcome!
-- Feel free to reach out if you need any help.
+- Feel free to reach out if you have any query.
