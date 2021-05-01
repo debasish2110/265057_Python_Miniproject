@@ -87,7 +87,7 @@ Sudoku Solver is made with ♥ by [Debashish](https://debashishdash.herokuapp.co
 
 Backtracking algorithm is used in this project and the algorithm is inspired from [tech with tim](https://github.com/techwithtim)... link to which is given below...
 
-<table><tr><td align="center"><a href="https://www.techwithtim.net/tutorials/python-programming/"><img src="https://i.ytimg.com/vi/um4VEJipNQM/maxresdefault.jpg" width="100px;" alt=""/><br /><sub><b>Laszlo</b></sub></a></td></table>
+<table><tr><td align="center"><a href="https://www.techwithtim.net/tutorials/python-programming/"><img src="https://i.ytimg.com/vi/um4VEJipNQM/maxresdefault.jpg" height="100px;" width="100px;" alt=""/><br /><sub><b>Tech with tim</b></sub></a></td></table>
 
 ### Support & Contributions
 - Please ⭐️ this repository if this project helped you!
