@@ -77,6 +77,8 @@ $ pytest sudokuSolver.py
 |   ├── solving sudoku roblem.png
 |   ├── exit page.png
 |   └── pytest output.png
+├── recordings
+|   ├── code_run_n_test.mp4
 ├── .gitignore 
 ├── README.md
 └── LICENSE
