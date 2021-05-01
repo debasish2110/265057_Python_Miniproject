@@ -75,3 +75,22 @@ Folder        | description
 └──  LICENSE
 
 ```
+-----
+
+### Future Update Plans,,,
+-----
+Working on a feature which will take sudoku problem from user and solve that problem.
+
+### License
+Sudoku Solver is made with ♥ by [Debashish](https://debashishdash.herokuapp.com/) and it is released under the GPL-3.0 license.
+
+### Inspiration
+
+Backtracking algorithm is used in this project and the algorithm is inspired from [tech with tim](https://github.com/techwithtim)... link to which is given below...
+
+<table><tr><td align="center"><a href="https://www.techwithtim.net/tutorials/python-programming/"><img src="https://i.ytimg.com/vi/um4VEJipNQM/maxresdefault.jpg" width="100px;" alt=""/><br /><sub><b>Laszlo</b></sub></a></td></table>
+
+### Support & Contributions
+- Please ⭐️ this repository if this project helped you!
+- Contributions of any kind welcome!
+- Feel free to reach out if you need any help.

@@ -21,7 +21,41 @@ Folder        | description
 **[sudokusolver.py](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/Implementation/sudokuSolver.py) is the main file we need to run that**
 **[Test/test.py](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/Implementation/Test/test.py) is the test file.**
 
-* how to run the code and working output along with the testing is recorded and available in the recordings folder and also uploaded in youtube:
-* youtube link: https://youtu.be/PQzAt9oarwM
+* how to run the code and working output along with the testing is recorded and available in the recordings folder and also uploaded in youtube link of the same is: https://youtu.be/PQzAt9oarwM
 
 --------------------------------------------------------
+
+### Screenshots of the code output
+-----
+
+* coverpage
+
+ <img src="https://github.com/debasish2110/265057_Python_Miniproject/blob/master/ScreenShots/welcome%20page.png" width="920" height="520">
+
+* Options section
+
+ <img src="https://github.com/debasish2110/265057_Python_Miniproject/blob/master/ScreenShots/options.png" width="920" height="520">
+
+* outut of solved sudoku
+
+ <img src="https://github.com/debasish2110/265057_Python_Miniproject/blob/master/ScreenShots/solving%20sudoku%20problem.png" width="920" height="520">
+
+* exit section
+
+ <img src="https://github.com/debasish2110/265057_Python_Miniproject/blob/master/ScreenShots/exit%20page.png" width="920" height="520">
+
+**All these screenshots are also available is the [ScreenShots](https://github.com/debasish2110/265057_Python_Miniproject/tree/master/ScreenShots) folder**
+
+-----
+
+### Future Update Plans,,,
+-----
+Working on a feature which will take sudoku problem from user and solve that problem.
+
+
+
+
+
+
+
+
