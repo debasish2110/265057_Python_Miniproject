@@ -42,6 +42,10 @@ Folder        | description
 
  <img src="https://github.com/debasish2110/265057_Python_Miniproject/blob/master/ScreenShots/exit%20page.png" width="920" height="520">
 
+* test using pytest(5 teast cases on 1 function) output
+
+ <img src="https://github.com/debasish2110/265057_Python_Miniproject/blob/master/ScreenShots/pytest%20output.png" width="920" height="520">
+
 **All these screenshots are also available is the [ScreenShots](https://github.com/debasish2110/265057_Python_Miniproject/tree/master/ScreenShots) folder**
 
 -----
