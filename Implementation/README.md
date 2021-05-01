@@ -14,10 +14,14 @@ A little interesting point is that there are 6,670,903,752,021,072,936,960 possi
 Folder        | description
 --------------| ----------------------------------------------
 `src`         | All the source codes(text & .py) required for the code
-`test`        | test file is placed here.
+`Test`        | test file is placed here.
 
 --------------------------------------------------------
 
-**sudokusolver.py is the main file we need to run that**
+**[sudokusolver.py](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/Implementation/sudokuSolver.py) is the main file we need to run that**
+**[Test/test.py](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/Implementation/Test/test.py) is the test file.**
+
+* how to run the code and working output along with the testing is recorded and available in the recordings folder and also uploaded in youtube:
+* youtube link: https://youtu.be/PQzAt9oarwM
 
 --------------------------------------------------------

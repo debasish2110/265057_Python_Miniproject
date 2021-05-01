@@ -38,8 +38,10 @@ $ cd Implementation
 # install the requirements
 $ pip3 install -r requirements.txt
 =================================
+
 # run the code in linux system 
 $ python3 sudokuSolver.py 
+
 # run the code in windows system
 $ python sudokuSolver.py
 
