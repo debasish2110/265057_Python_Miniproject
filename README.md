@@ -25,7 +25,10 @@ Folder        | description
 `ScreenShots`        | screenshots of the code output are placed here.
 `recordings`         | Recordings of how to to run and the outputs.
 
-Open the **[Implementation](https://github.com/debasish2110/265057_Python_Miniproject/tree/master/Implementation)** folder for the source code...
+* Open the **[Implementation](https://github.com/debasish2110/265057_Python_Miniproject/tree/master/Implementation)** folder for the source code...
+
+* how to run the code and working output along with the testing is recorded and available in the recordings folder and also uploaded on youtube..
+* link of my youtube video is: https://youtu.be/PQzAt9oarwM
 
 -----
 ### Installations
