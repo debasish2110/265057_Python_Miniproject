@@ -1,5 +1,5 @@
 # 265057_Python_Miniproject
-* started working on this project from 21st april
+* work done on this project from 21st april to 1st may 2021..
 ------------
 **Banner**
 
