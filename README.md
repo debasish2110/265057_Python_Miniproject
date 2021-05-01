@@ -17,15 +17,15 @@
 **SF_ID:** [265057](https://futureskillsnasscom.edcast.com/@debasishdash98)
 
 ---
-
-Open the **[Implementation](https://github.com/debasish2110/265057_Python_Miniproject/tree/master/Implementation)** folder for the source code...
-
 ### folder structure
+
 Folder        | description
 --------------| ----------------------------------------------
 `Implementation`        | This folder contains the source code.
 `ScreenShots`        | screenshots of the code output are placed here.
 `recordings`         | Recordings of how to to run and the outputs.
+
+Open the **[Implementation](https://github.com/debasish2110/265057_Python_Miniproject/tree/master/Implementation)** folder for the source code...
 
 -----
 ### Installations
