@@ -1,5 +1,6 @@
-# 265057_Python_Miniproject
+### 265057_Python_Miniproject
 * work done on this project from 25th april to 1st may 2021..
+* This mini-project is an application of BackTracking algorithm
 ------------
 **Banner**
 
@@ -118,5 +119,5 @@ Backtracking algorithm is used in this project and the algorithm is inspired fro
 
 ### Support & Contributions
 - Please ⭐️ this repository if this project helped you!
-- Contributions of any kind welcome!
+- Contributions of any kind is always welcome!
 - Feel free to reach out if you have any query.
