@@ -109,7 +109,7 @@ PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 Working on a feature which will take sudoku problem from user and solve that problem.
 
 ### License
-Sudoku Solver is made with ♥ by [Debashish](https://debashishdash.herokuapp.com/) and it is released [under MIT license](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/LICENSE).
+Sudoku Solver is made with ♥ by [Debashish](https://debashishdash.herokuapp.com/) and it is released under [MIT license](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/LICENSE).
 
 ### Inspiration
 
