@@ -16,7 +16,8 @@ Folder        | description
 
 --------------------------------------------------------
 
-**[sudokusolver.py](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/Implementation/sudokuSolver.py) is the main file we need to run that**
+**[sudokusolver.py](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/Implementation/sudokuSolver.py) is the main file.. we need to run that**
+
 **[Test/test.py](https://github.com/debasish2110/265057_Python_Miniproject/blob/master/Implementation/Test/test.py) is the test file.**
 
 * how to run the code and working output along with the testing is recorded and available in the recordings folder and also uploaded on youtube..
