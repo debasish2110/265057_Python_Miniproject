@@ -77,7 +77,6 @@ $ pytest sudokuSolver.py
 -----
 
 ### Future Update Plans,,,
------
 Working on a feature which will take sudoku problem from user and solve that problem.
 
 ### License
